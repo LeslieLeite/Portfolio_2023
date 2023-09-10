@@ -1,0 +1,153 @@
+:root {
+    --cor-site: #804BF2;
+    --cor-site1: #A571D9;
+    --cor-site2: #F29472;
+    --cor-site3: #F28DA8;
+
+}
+*{
+    font-family: Montserrat, sans-serif;
+    
+}
+
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color:var(--cor-site);
+    text-transform: uppercase;
+   
+    
+    
+}
+#hamburguer{
+    background-color: var(--cor-site1);
+    color: var(--cor-site3);
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.logo {
+    border-radius: 5px;
+}
+
+.header_nav{
+    background-color:var(--cor-site);
+    display: none;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+
+ul {
+     margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .4em;
+    
+}
+
+.header_nav a{
+    color:#DE5551;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb,#DE5551, #ffffff 50%);
+    color: #6C3C36;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+
+.sobre img{
+    max-width: 18em;
+}
+
+
+footer {
+   
+    background-color: #DE5551;
+    padding: 1em;
+    text-align: center;
+
+}
+
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+   
+
+}
+.tamanho  {
+    width: 2.5em;
+   
+  }
+ 
+  .texto_footer{
+      margin: 0;
+      padding-top: 2em;
+      color: #6C3C36;
+  }
+
+  @media screen  and (min-width: 36em) {
+           
+    #hamburguer {
+        display: none;
+    }
+ 
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--cor-site);  
+    }
+
+    .header_nav  {
+        display: block;
+    }
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: .9em;
+    }
+    .header_nav li {
+        display: inline-block;
+    }
+
+    .header_nav a {
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover {
+        background-color: #E55545;
+        color: #F5DDDB;
+    }
+   
+   
+    .footer_nav {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.5em;
+    }
+
+
+  }
+
+
+    
