@@ -74,12 +74,12 @@ ul {
 }
 
 h1 {
- color: var(--cor-site3);
+
  text-transform: uppercase;
 }
 
-p {
-   color: var(--cor-site); 
+.geral_texto {
+    color: var(--cor-site3);
 }
 
 .sobre img {
@@ -117,7 +117,7 @@ p {
     background-color:color-mix(in srgb, var(--cor-site), #ffffff 50%);
 }
 
-.projetos {
+.projeto {
     background-color:color-mix(in srgb, var(--cor-site), #ffffff 60%);
 }
 
@@ -129,6 +129,10 @@ p {
     background-color:color-mix(in srgb, var(--cor-site), #ffffff 70%);
  }
 
+.legenda a {
+    color: var(--cor-site3);
+    text-decoration: none;
+ }
 footer {
    
     background-color: var(--cor-site3);
@@ -149,29 +153,7 @@ footer {
    
   }
 
-  #conquista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-   
-  }
-
-  .carousel {
-    width: 100%; 
-    max-width: 800px; 
-  }
-
-  .carousel-inner {
-    text-align: center; 
-  }
-
-  .carousel-item img {
-    max-width: 100%; 
-    height: auto;
-    display: block; 
-  }
-
+  
   #projeto video {
    
     width: calc(100% - 2em);
