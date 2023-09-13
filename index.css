@@ -1,27 +1,25 @@
 :root {
-    --cor-site: #804BF2;
-    --cor-site1: #A571D9;
-    --cor-site2: #F29472;
-    --cor-site3: #F28DA8;
+    --cor-site: #1C4FAE;
+    --cor-site1: #2365DE;
+    --cor-site2: #6994E3;
+    --cor-site3: #0F2B5E;
+    --cor-site4: #457ABF;
+    --cor-site5: #81B7DE;
 
 }
 *{
-    font-family: Montserrat, sans-serif;
-    
+    font-family: Montserrat, sans-serif;   
 }
-
 
 .header{
     text-align: center;
     margin: auto;
-    background-color:var(--cor-site);
+    background-color:var(--cor-site3);
     text-transform: uppercase;
-   
-    
-    
+      
 }
 #hamburguer{
-    background-color: var(--cor-site1);
+    background-color: var(--cor-site);
     color: var(--cor-site3);
     display: block;
     text-align: center;
@@ -53,35 +51,87 @@ ul {
     padding: 0;
     text-transform: uppercase;
     letter-spacing: .2em;
-    font-size: .4em;
+    font-size: .8em;
     
 }
 
 .header_nav a{
-    color:#DE5551;
+    color: var(--cor-site3);
     text-decoration: none;
     display: block;
     padding: 1em;
 }
 
 .header_nav a:hover{
-    background-color: color-mix(in srgb,#DE5551, #ffffff 50%);
-    color: #6C3C36;
+    background-color: var(--cor-site3);
+    color: var(--cor-site1);
+}
+/* Pensar nessa classe para todas as div -.maxWidth{
+    max-width: 90em;/*1440px*/
+
+.sobre {
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 10%);
 }
 
-h1{
-    text-transform: uppercase;
+h1 {
+ color: var(--cor-site3);
+ text-transform: uppercase;
 }
 
+p {
+   color: var(--cor-site); 
+}
 
-.sobre img{
+.sobre img {
     max-width: 18em;
+    width: calc(100% - 2em);
 }
 
+.inicio img {
+    max-width: 18em;
+    width: calc(100% - 2em);
+}  
+.inicio {
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+.desafios img {
+    width: calc(100% - 2em);
+ }
+.desafios {
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 30%);
+}
+
+.conquista {
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 40%);
+    
+    
+}
+
+.aprendi img {
+    max-width: 18em;
+    width: calc(100% - 2em);
+}
+
+.aprendi {
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 50%);
+}
+
+.projetos {
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 60%);
+}
+
+ .depoimento img{   
+    width: calc(100% - 2em);
+ }
+
+ .depoimento {
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 70%);
+ }
 
 footer {
    
-    background-color: #DE5551;
+    background-color: var(--cor-site3);
     padding: 1em;
     text-align: center;
 
@@ -98,14 +148,42 @@ footer {
     width: 2.5em;
    
   }
- 
+
+  #conquista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+  }
+
+  .carousel {
+    width: 100%; 
+    max-width: 800px; 
+  }
+
+  .carousel-inner {
+    text-align: center; 
+  }
+
+  .carousel-item img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+  }
+
+  #projeto video {
+   
+    width: calc(100% - 2em);
+}
   .texto_footer{
       margin: 0;
       padding-top: 2em;
-      color: #6C3C36;
+      color: var(--cor-site1);
   }
 
-  @media screen  and (min-width: 36em) {
+ 
+  @media screen  and (min-width: 36em)/*576px*/ {
            
     #hamburguer {
         display: none;
@@ -124,7 +202,7 @@ footer {
 
     .header_nav ul {
         margin-right: 2em;
-        font-size: .9em;
+        font-size: .8em;
     }
     .header_nav li {
         display: inline-block;
@@ -135,19 +213,20 @@ footer {
     }
 
     .header_nav a:hover {
-        background-color: #E55545;
-        color: #F5DDDB;
+        background-color: var(--cor-site1);
+        color: var(--cor-site3);
     }
-   
-   
+    
+ 
     .footer_nav {
         flex-direction: row;
         justify-content: space-between;
         gap: 1.5em;
     }
-
-
+   
   }
+
+  
 
 
     
