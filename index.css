@@ -11,14 +11,14 @@
     font-family: Montserrat, sans-serif;   
 }
 
-.header{
+.header {
     text-align: center;
     margin: auto;
     background-color:var(--cor-site3);
     text-transform: uppercase;
       
 }
-#hamburguer{
+#hamburguer {
     background-color: var(--cor-site);
     color: var(--cor-site3);
     display: block;
@@ -32,21 +32,20 @@
     border-radius: 5px;
 }
 
-.header_nav{
+.header_nav {
     background-color:var(--cor-site);
     display: none;
 }
 
-.header_nav.show{
+.header_nav.show {
     display: block;
 }
-
 
 ul {
      margin: 0;
 }
 
-.header_nav ul{
+.header_nav ul {
     list-style-type: none;
     padding: 0;
     text-transform: uppercase;
@@ -55,14 +54,14 @@ ul {
     
 }
 
-.header_nav a{
+.header_nav a {
     color: var(--cor-site3);
     text-decoration: none;
     display: block;
     padding: 1em;
 }
 
-.header_nav a:hover{
+.header_nav a:hover {
     background-color: var(--cor-site3);
     color: var(--cor-site1);
 }
@@ -74,12 +73,18 @@ ul {
 }
 
 h1 {
-
+ color: var(--cor-site3);
  text-transform: uppercase;
 }
 
-.geral_texto {
+p {
+   color: var(--cor-site); 
+}
+
+.text-center a {
+    text-decoration: none;
     color: var(--cor-site3);
+
 }
 
 .sobre img {
@@ -97,15 +102,20 @@ h1 {
 
 .desafios img {
     width: calc(100% - 2em);
- }
+}
 .desafios {
     background-color:color-mix(in srgb, var(--cor-site), #ffffff 30%);
 }
 
 .conquista {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 40%);
-    
-    
+    background-color:color-mix(in srgb, var(--cor-site), #ffffff 40%);     
+}
+#conquista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
 }
 
 .aprendi img {
@@ -117,22 +127,18 @@ h1 {
     background-color:color-mix(in srgb, var(--cor-site), #ffffff 50%);
 }
 
-.projeto {
+.projetos {
     background-color:color-mix(in srgb, var(--cor-site), #ffffff 60%);
 }
 
- .depoimento img{   
+.depoimento img {   
     width: calc(100% - 2em);
- }
+}
 
- .depoimento {
+.depoimento {
     background-color:color-mix(in srgb, var(--cor-site), #ffffff 70%);
- }
+}
 
-.legenda a {
-    color: var(--cor-site3);
-    text-decoration: none;
- }
 footer {
    
     background-color: var(--cor-site3);
@@ -141,31 +147,31 @@ footer {
 
 }
 
-.footer_nav{
+.footer_nav {
     display: flex;
     flex-direction: column;
     gap: 1em;
    
 
 }
-.tamanho  {
+.redes {
     width: 2.5em;
    
-  }
+}
 
-  
   #projeto video {
-   
+    /*max-width: 20em;*/
     width: calc(100% - 2em);
 }
-  .texto_footer{
+
+.texto_footer {
       margin: 0;
       padding-top: 2em;
       color: var(--cor-site1);
-  }
+}
 
  
-  @media screen  and (min-width: 36em)/*576px*/ {
+@media screen  and (min-width: 36em)/*576px*/ {
            
     #hamburguer {
         display: none;
@@ -175,10 +181,11 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--cor-site);  
+        background-color: var(--cor-site); 
+        
     }
 
-    .header_nav  {
+    .header_nav {
         display: block;
     }
 
@@ -206,9 +213,8 @@ footer {
         gap: 1.5em;
     }
    
-  }
-
-  
+      
+}
 
 
     
