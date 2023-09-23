@@ -7,17 +7,20 @@
     --cor-site5: #81B7DE;
 
 }
-*{
-    font-family: Montserrat, sans-serif;   
+
+* {
+    font-family: Montserrat, sans-serif;
 }
 
 .header {
     text-align: center;
     margin: auto;
-    background-color:var(--cor-site3);
+    background-color: var(--cor-site3);
     text-transform: uppercase;
-      
+
+
 }
+
 #hamburguer {
     background-color: var(--cor-site);
     color: var(--cor-site3);
@@ -28,12 +31,9 @@
     font-size: 2em;
 }
 
-.logo {
-    border-radius: 5px;
-}
 
 .header_nav {
-    background-color:var(--cor-site);
+    background-color: var(--cor-site);
     display: none;
 }
 
@@ -42,7 +42,7 @@
 }
 
 ul {
-     margin: 0;
+    margin: 0;
 }
 
 .header_nav ul {
@@ -51,7 +51,7 @@ ul {
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: .8em;
-    
+
 }
 
 .header_nav a {
@@ -65,25 +65,24 @@ ul {
     background-color: var(--cor-site3);
     color: var(--cor-site1);
 }
-/* Pensar nessa classe para todas as div -.maxWidth{
-    max-width: 90em;/*1440px*/
-
-.sobre {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 10%);
-}
 
 h1 {
- color: var(--cor-site3);
- text-transform: uppercase;
+    color: var(--cor-site3);
+    text-transform: uppercase;
 }
 
 p {
-   color: var(--cor-site); 
+    color: var(--cor-site3);
 }
 
 .text-center a {
     text-decoration: none;
     color: var(--cor-site3);
+
+}
+
+.sobre {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 10%);
 
 }
 
@@ -95,52 +94,61 @@ p {
 .inicio img {
     max-width: 18em;
     width: calc(100% - 2em);
-}  
-.inicio {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 20%);
 }
 
-.desafios img {
+.inicio {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+
+}
+
+.desafios img {  
+    max-width: 18em;
     width: calc(100% - 2em);
 }
+
 .desafios {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 30%);
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 30%);
 }
 
 .conquista {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 40%);     
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 40%);
 }
+
 #conquista {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-   
+
 }
 
 .aprendi img {
     max-width: 18em;
-    width: calc(100% - 2em);
+    /*width: calc(100% - 2em);*/
 }
 
 .aprendi {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 50%);
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 50%);
 }
 
 .projetos {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 60%);
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 60%);
 }
 
-.depoimento img {   
-    width: calc(100% - 2em);
+#projeto video {
+    width: calc(100% - 2em);   
+}
+
+#fala video {
+    width: calc(100% - 1em);
 }
 
 .depoimento {
-    background-color:color-mix(in srgb, var(--cor-site), #ffffff 70%);
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 70%);
 }
 
 footer {
-   
+
     background-color: var(--cor-site3);
     padding: 1em;
     text-align: center;
@@ -151,38 +159,32 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1em;
-   
-
 }
+
 .redes {
     width: 2.5em;
-   
-}
-
-  #projeto video {
-    /*max-width: 20em;*/
-    width: calc(100% - 2em);
 }
 
 .texto_footer {
-      margin: 0;
-      padding-top: 2em;
-      color: var(--cor-site1);
+    margin: 0;
+    padding-top: 2em;
+    color: var(--cor-site1);
 }
 
- 
-@media screen  and (min-width: 36em)/*576px*/ {
-           
+
+@media screen and (min-width: 36em)
+/*576px*/
+    {
+
     #hamburguer {
         display: none;
     }
- 
+
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--cor-site); 
-        
+        background-color: var(--cor-site);
     }
 
     .header_nav {
@@ -193,6 +195,7 @@ footer {
         margin-right: 2em;
         font-size: .8em;
     }
+
     .header_nav li {
         display: inline-block;
     }
@@ -205,15 +208,16 @@ footer {
         background-color: var(--cor-site1);
         color: var(--cor-site3);
     }
-    
- 
+
+   
+
     .footer_nav {
         flex-direction: row;
         justify-content: space-between;
         gap: 1.5em;
     }
-   
-      
+
+
 }
 
 
