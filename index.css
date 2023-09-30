@@ -48,9 +48,6 @@ ul {
     list-style-type: none;
     padding: 0;
     text-transform: uppercase;
-    /*letter-spacing: .2em;
-    font-size: 1em;*/
-
 }
 
 .header_nav a {
@@ -142,8 +139,7 @@ p {
 }
 
  #projeto video {
-   width: var(--tamanho);
-   
+   width: var(--tamanho);  
 } 
 
 
@@ -217,9 +213,9 @@ footer {
     }
 
     .card video {
-        width: 35em;
-        height: 19.8em; 
-     }
+        width: 40em;
+        height: 20em; 
+     } 
 
     .footer_nav {
         flex-direction: row;
@@ -228,9 +224,6 @@ footer {
     }
 
 }
-
-
-    
 
 
     
